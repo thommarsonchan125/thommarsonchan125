@@ -1,0 +1,9 @@
+void Iorder(BTree * root)
+{
+  if(root)
+  {    
+    Iorder(root->left);
+    printf("%3d",root->data);
+    Iorder(root->right);
+  }
+}
